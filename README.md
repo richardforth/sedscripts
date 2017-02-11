@@ -10,4 +10,8 @@ A sed script used to fix tripwire on centos7.3 with regards to error report abou
 	# cd /etc/tripwire
 	# sed -i.bak -r -f fix_tw_centos7.3.sed twpol.txt
 
-Then follow the standard configuration procedure as outlined in /usr/share/doc/tripwire-*/README.Fedora 
+Then follow the standard configuration procedure as outlined in /usr/share/doc/tripwire-\*/README.Fedora 
+
+## countries.sed
+
+A sed script that will convert any 2 digit country codes into long names, useful when doing whois type lookips on IP addresses.
