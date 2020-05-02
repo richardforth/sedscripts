@@ -15,3 +15,8 @@ Then follow the standard configuration procedure as outlined in /usr/share/doc/t
 ## countries.sed
 
 A sed script that will convert any 2 digit country codes into long names, useful when doing whois type lookips on IP addresses.
+
+
+## distros-tbl.sed  and distros.txt
+
+  $ sort -k 1,1 -k 2n distros.txt | sed -f distros_tbl.sed | groff -t -T ascii 2>/dev/null | sed 'N;/^\n$/d;P;D'
